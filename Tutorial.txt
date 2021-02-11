@@ -1,0 +1,65 @@
+GITHUB
+
+Subir projeto
+
+https://www.youtube.com/watch?v=GzRxUO41noY
+
+
+Colocar os arquivos na pasta
+Abrir o terminal Gi Bash Here
+
+Para a 1ª vez configurar o usuário e email
+git config --global user.name "fjpaula2019"
+git config --global user.email "fjpaula2019@gmail.com"
+
+Iniciar o git - git init
+Verificar se os arquivos estão na pasta - git status
+Adicionando os arquivos para envio = git add .
+Colocar o nome do commit - git commit -m "Git Hub com Laravel"
+Redirecionar para  a pasta no git - git remote add origin https://github.com/fjpaula2019/laravel-do-zero.git
+Subir aqruivo - git push origin master  
+Colocar login e senha
+
+
+Atualizar respositório
+
+git init
+git add .
+git commit -m "Novo tutorial"
+git push origin master  
+
+
+Obs:
+Resetar repositório
+git pull origin master --allow-unrelated-histories
+
+
+CRUD
+Criar o projeto
+Criar o banco de dados
+Criar a migração das tabelas - php artisan migrate
+
+
+Criando as telas de Autenticação(LOGIN) siga os passos abaixo:
+ - Verificar se possui o node instalado na maquina
+ - composer require laravel/ui
+ - php artisan ui vue --auth
+ - npm install
+ - npm run dev
+
+Realizar teste com cadastro e login de usuário
+
+Criar um grupo de rota e trasnferir as existentes para esse grupo
+
+Criar dentro da pasta views um pasta chamada usuarios  e o arquivo list.blade.php ela irá listar os usuarios
+Criar a rota de lista usuarios
+Criar a controllers do usuarios - php artisan make:controller UsuariosController 
+Criar a model Usuario - php artisan make:model Usuario
+Criar a tabela usuarios - php artisan make:migration create_usuarios_table --create=usuarios
+
+Na model Usuario definir os campos de preenchimento que serão utilizados
+Criar em UsuariosController a função index
+Usar o foreach em list.blade
+
+https://www.youtube.com/watch?v=TKH4S4_d9PA 
+28:30
